@@ -52,6 +52,10 @@ def autodelete_photos(
             path = os.path.normpath(
                 local_download_path(
                     media, size, download_dir))
+            # skip when path is an directory
+            if os.path.isdir(path):
+                logger.debug("Skipping delete directory %s", path)
+                continue
             if os.path.exists(path):
                 logger.debug("Deleting %s...", path)
                 delete_local = delete_file_dry_run if dry_run else delete_file

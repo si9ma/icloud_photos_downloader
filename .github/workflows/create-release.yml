@@ -44,6 +44,6 @@ jobs:
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
-      PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
+      # PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
